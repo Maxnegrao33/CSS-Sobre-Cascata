@@ -1,0 +1,39 @@
+/* Especificidade da Cascata*/
+
+/*Seu estilo é lido de cima para baixo
+*/
+
+/*Sua ordem
+0 - Universal Seletor (*), combinators e negation pseudo-class(:not())
+1 - Element type selector e pseudo-elements (::before, ::after)
+10 - Class e attibute selectors ([type="radio"])
+100 - ID selector
+1000 - Inline
+*/
+
+
+CSS
+/* Valor e seletor*/
+#my-title 
+#my-title strong {
+    color: gray;
+}
+
+.title {
+    color: red;
+}
+
+body h1 {
+    color: blue;
+}
+
+* {
+    color: green;
+}
+
+/*A regra important
+Ela sobreescreve todas as regras
+Prática não recomendada para uso*/
+
+
+
